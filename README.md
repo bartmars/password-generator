@@ -5,7 +5,7 @@ Scrimba Soloproject from the Frontend Developer Career Path, built from scratch.
 Bart Mars
 
 ## Deployment
-This repository is being auto-deployed via a [Netlify app](https://).
+This repository is being auto-deployed via a [Netlify app](https://www.netlify.com).
 
 ## Requirements
 * Build it from “Scratch”
