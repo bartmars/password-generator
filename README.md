@@ -8,15 +8,15 @@ Bart Mars
 This repository is being auto-deployed via a [Netlify app](https://www.netlify.com).
 
 ## Requirements
-* Build it from “Scratch”
-* Generate two random passwords when the user clicks the button
-* Each password should be 15 characters long
+* [x] Build it from “Scratch”
+* [x] Generate two random passwords when the user clicks the button
+* [x] Each password should be 15 characters long
 
 ## Stretch goals
-* Ability to set password length
-* Add “copy-on-click”
-* Toggle “symbols” and “numbers” on/off
-* Dark mode / Light mode button (my own goal)
+* [x] Ability to set password length
+* [ ] Add “copy-on-click”
+* [x] Toggle “symbols” and “numbers” on/off
+* [ ] Dark mode / Light mode button (my own goal)
 
 ## Color palette
 Dark mode:
