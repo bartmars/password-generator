@@ -2,14 +2,16 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">     
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div id="password-box" class="container">
             <h1 id="hero-text">Generate a <br /><span class="accent-clr">random password</span></h1>
             <h3 id="subtitle-text">Never use an insecure password again.</h3>
             <button id="generate-passwords-btn" class="accent-btn" onclick="generatePasswords()">Generate passwords</button>
-            <div class="flex flex-gap">
+            <div id="custom" class="flex flex-gap">
                 <div>
                     <p>Numbers</p>
                     <button id="numbers-chars-btn" class="accent-btn special-on-btn" onclick="toggleNumberCharsCharacters()">On</button>    
@@ -25,10 +27,17 @@
             </div>
             <hr class="seperator">
             <div id="password-fields" class="flex">
-                <div id="password-one-el" class="password"></div>
-                <div id="password-two-el" class="password"></div>
+                <div>
+                    <div id="password-one-el" class="password"></div>
+                    <button id="copy-password-one" class="accent-btn" onclick="copyToClipboard(1)"><i class="bi bi-clipboard"></i></button>
+                    <p id="password-one-saved"></p>
+                </div>
+                <div>
+                    <div id="password-two-el" class="password"></div>
+                    <button id="copy-password-two" class="accent-btn" onclick="copyToClipboard(2)"><i class="bi bi-clipboard"></i></button>
+                    <p id="password-two-saved"></p>
+                </div>
             </div>
-            <button class="accent-btn" onclick="copyToClipboard()">Save to clipboard</button>
         </div>
         <script src="index.js"></script>
     </body>

@@ -1,9 +1,6 @@
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", ];
-
 const specialCharacters = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]
-
 const numberCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
 
 let passwordOne = "" 
 let passwordTwo = ""
@@ -17,6 +14,8 @@ let specialCharsBtn = document.getElementById("special-chars-btn")
 let passwordOneEl = document.getElementById("password-one-el")
 let passwordTwoEl = document.getElementById("password-two-el")
 let numberOfChars = document.getElementById("number-of-chars")
+let msgPasswordOneSaved = document.getElementById("password-one-saved")
+let msgPasswordTwoSaved = document.getElementById("password-two-saved")
 
 function toggleNumberCharsCharacters() {
     if (isNumbersCharsEnabled) {
@@ -48,13 +47,11 @@ function generatePasswords() {
         passwordSize = 15
     } else {
         passwordSize = numberOfChars.value
-        console.log(passwordSize)
     }
     passwordOne = generatePassword()
     passwordTwo = generatePassword() 
     passwordOneEl.textContent = passwordOne
     passwordTwoEl.textContent = passwordTwo
-
 }
 
 function resetPasswords() {
@@ -97,8 +94,12 @@ function generatePassword() {
     }
 }
 
-function copyToClipboard() {
-    let copyPassword = navigator.clipboard.writeText(passwordOneEl.value)
-    console.log(copyPassword)
-    return copyPassword
-}
+function copyToClipboard(i) {
+    if (i === 1) {
+        navigator.clipboard.writeText(passwordOneEl.textContent);
+        msgPasswordOneSaved.textContent = "Saved to clipboard!"
+    } else {
+        navigator.clipboard.writeText(passwordTwoEl.textContent.textContent);
+        msgPasswordTwoSaved.textContent = "Saved to clipboard!"
+    }
+}   

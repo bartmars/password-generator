@@ -9,14 +9,14 @@ This repository is being auto-deployed via a [Netlify app](https://www.netlify.c
 
 ## Requirements
 * [x] Build it from “Scratch”
+* [x] Use this [Figma](https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/Random-Password-Generator-(New-version)?node-id=0%3A1) design
 * [x] Generate two random passwords when the user clicks the button
 * [x] Each password should be 15 characters long
 
 ## Stretch goals
 * [x] Ability to set password length
-* [ ] Add “copy-on-click”
+* [x] Add “copy-on-click”
 * [x] Toggle “symbols” and “numbers” on/off
-* [ ] Dark mode / Light mode button (my own goal)
 
 ## Color palette
 Dark mode:
@@ -28,15 +28,4 @@ Dark mode:
 * Outer Box: #1F2937
 * Accent: #10B981
 * Background: #1C1C1C
-* Button: #10B981
-
-Light mode:
-* Heading: night and #10B981
-* Text: 
-* Supporting text: #6B7280
-* Password Field Background: #273549
-* Password text: #5DEF92
-* Outer Box:
-* Accent:
-* Background: 
 * Button: #10B981

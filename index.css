@@ -9,31 +9,34 @@ body {
     color: #4ADF86;
 }
 
-
 .password {
     background: #273549;
     border: none;
     color: #55F991;
     text-align: center;
-    margin: 20px 20px 0 0;
+    margin: 30px 0 0 0px;
     padding: 16px 20px;
     border-radius: 6px;
     width: 180px;
     display: inline-block;
     height: 1em;
-    width: 100%;
-    max-width: 80%;
+    width: 200px;
+}
+
+.password:last-of-type {
+    margin: 15px auto;
 }
 
 .seperator {
     border: #2F3E53 .5px solid;
+    margin: 10px 0 30px 0;
 }
 
 .accent-btn {
     color: #FFFFFF;
     background: #10B981;
     font-size: 18px;
-    margin: 30px 0;
+    /* margin: 30px 0 0 0; */
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
@@ -41,10 +44,6 @@ body {
 
 .flex {
     display: flex;
-}
-
-.flex-space-between {
-    justify-content: space-between;
 }
 
 .flex-gap {
@@ -71,12 +70,6 @@ body {
     background: #10B981;
 }
 
-.submit-btn {
-    width: 75px;
-    background: #10B981;
-    margin: 0px 0px 40px 0px;
-}
-
 #hero-text {
     font-weight: bolder;
 }
@@ -94,15 +87,18 @@ body {
     max-height: 550px;
 }
 
+#generate-passwords-btn {
+    margin: 30px 0 0 0;
+}
+
+#custom {
+    margin: 20px 0 0 0;
+}
+
 #number-of-chars {
     margin: 0;
     padding: 10px 20px;
     height: 40px;
     font-size: 18px;
     width: 100px;
-}
-
-#number-of-chars::placeholder {
-    color: #10B981;
-    font-size: 18px;
 }
